@@ -92,7 +92,7 @@ The Streamlit application provides:
 │
 ├── .streamlit/
 ├── streamlit_app.py
-├── rain_prediction_colab_nazril.ipynb
+├── rain_prediction_colab_nazril.ipynb (file utama)
 ├── requirements.txt
 ├── secrets.toml.example
 └── README.md
