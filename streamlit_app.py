@@ -768,7 +768,7 @@ st.markdown(
 <div class="eyebrow on-dark">Aigra Eon &middot; Smart Farming Weather Intelligence</div>
 <p class="hero-title">Stasiun Prediksi Cuaca</p>
 <p class="hero-sub">Estimasi peluang hujan esok hari dari kondisi atmosfer hari ini, membantu petani
-merencanakan penyiraman, pemupukan, dan panen dengan lebih presisi.</p>
+merencanakan penyiraman, pemupukan, dan panen dengan lebih presisi (by Nazril Ravi Pratama).</p>
 </div>
 </div>
 <div class="hero-chips">
