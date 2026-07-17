@@ -1,0 +1,11 @@
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+scikit-learn
+xgboost==3.3.0
+tensorflow-cpu
+joblib
+streamlit
+google-genai

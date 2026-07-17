@@ -1,0 +1,33 @@
+
+KESIMPULAN ANALISIS
+
+1. Sebanyak 10 varian model diuji: Logistic Regression, Decision Tree, Random
+   Forest, Gradient Boosting, XGBoost, SVM (RBF), Deep Learning (MLP), model tuning terbaik
+   (XGBoost (Tuned)), Stacking Ensemble, dan Blended Ensemble.
+
+2. Model final untuk produksi: XGBoost (threshold keputusan=0.577,
+   dioptimalkan pada validation set, dievaluasi pada test set yang belum pernah dilihat).
+   - Accuracy : 0.8423
+   - Precision: 0.6309
+   - Recall   : 0.7147
+   - F1-score : 0.6701 (vs 0.6607 pada threshold default 0.5)
+   - ROC-AUC  : 0.8922
+
+3. Optimisasi threshold keputusan (bukan sekadar 0.5) terbukti meningkatkan F1-score kelas
+   minoritas secara konsisten di seluruh model, karena dataset sangat imbalance.
+
+4. Dataset memiliki class imbalance signifikan (rasio No:Yes sekitar 3.5:1).
+   Class weighting/scale_pos_weight dan optimisasi threshold membantu model tetap sensitif
+   terhadap kelas minoritas tanpa mengorbankan performa keseluruhan secara drastis.
+
+5. Lima fitur paling berpengaruh terhadap prediksi hujan besok: High_Humidity_Flag, Humidity3pm, RainToday, Humidity_Pressure_Interaction, Rainfall.
+   Hasil ini konsisten dengan uji statistik (uji-t dan Chi-square) pada tahap EDA.
+
+6. Catatan realistis: F1-score kelas minoritas pada level 0.67 sejalan dengan
+   benchmark publik untuk dataset ini (umumnya 0.62-0.70 tanpa data leakage). ROC-AUC
+   0.89 menunjukkan model memiliki kemampuan diskriminasi yang kuat meskipun
+   F1 kelas minoritas dibatasi oleh keterbatasan sinyal pada fitur cuaca tabular harian.
+
+7. Untuk kebutuhan smart farming, model ini dapat menjadi alat bantu awal bagi petani dalam
+   merencanakan penyiraman atau panen, namun sebaiknya dikombinasikan dengan sumber prakiraan
+   cuaca resmi (BMKG) karena data historis memiliki keterbatasan cakupan variabel atmosfer.
