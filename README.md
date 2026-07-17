@@ -1,10 +1,8 @@
 # Rain Prediction Intelligence System
 
-**Live Demo:** https://nazril-aigra-technicaltest-webdaashboard.streamlit.app/
+**Live Demo/Web Dashboard:** https://nazril-aigra-technicaltest-webdaashboard.streamlit.app/
 
 An end-to-end machine learning application for next-day rainfall prediction using the Weather Australia dataset. This project was developed as an AI Engineer technical test and demonstrates the complete machine learning lifecycle, from exploratory data analysis and feature engineering to model optimization and deployment through an interactive Streamlit dashboard for prediction interpretation and smart farming recommendations.
-
-**Streamlit Application:** https://nazril-aigra-technicaltest-webdaashboard.streamlit.app/
 
 ---
 
