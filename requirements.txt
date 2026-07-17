@@ -4,7 +4,7 @@ scipy
 matplotlib
 seaborn
 scikit-learn
-xgboost==3.3.0
+xgboost
 tensorflow-cpu
 joblib
 streamlit
