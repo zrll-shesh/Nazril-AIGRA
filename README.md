@@ -104,6 +104,7 @@ The Streamlit application provides:
 
 ```text
 .
+├── streamlit/config.toml
 ├── data/
 │   ├── test_set_scaled.csv
 │   ├── model_comparison.csv
